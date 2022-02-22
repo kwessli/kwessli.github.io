@@ -12,39 +12,22 @@
         	<img id="library" src="images/library.jpg" crossorigin="anonymous" />
 	</a-assets>
 		
-	<a-sky 
-		color = "#FFFFFF"
-		material = "src: #sky">
-	</a-sky>
     
- 
         <a-entity position="-2 2 -2" gltf-models="markers/rainbow.glb" rotation="0 45 0" scale=".2 .2 .2">
 	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #magical"  
         </a-entity>
-     <a-box
-        position="2 2 -2"
-        scale=".2 .2 .2" 
-        rotation="0 -45 0"
-        value="Three O'Clock"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #sewer"      
-      ></a-box>  
-     <a-box
-        position="0 2 2.5"
-        scale=".2 .2 .2" 
-        rotation="0 180 0"
-        value="Six O'Clock"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #water"     
-      ></a-box> 
-     <a-box
-        position="2 2 2.5"
-        scale=".2 .2 .2" 
-        rotation="0 180 0"
-        value="Six O'Clock"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #library"     
-      ></a-box> 
+    
+	<a-entity position="2 2 -2" gltf-models="markers/rat.glb" rotation="0 -45 0" scale=".2 .2 .2">
+	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #sewer"  
+        </a-entity>
+ 
+	<a-entity position="0 2 2 .5" gltf-models="markers/water.glb" rotation="0 180 0" scale=".2 .2 .2">
+	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #water"  
+        </a-entity>
+    
+	<a-entity position="2 2 2.5" gltf-models="markers/books.glb" rotation="0 180 0" scale=".2 .2 .2">
+	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #library"  
+        </a-entity>
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
