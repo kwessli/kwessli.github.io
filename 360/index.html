@@ -6,28 +6,49 @@
 	
 	<a-assets>
 		<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
-       	 	<img id="sewer" src="images/sewer.jpg" crossorigin="anonymous" />
-       		<img id="magical" src="images/magical.jpg" crossorigin="anonymous" />
-       	 	<img id="water" src="images/water.jpg" crossorigin="anonymous" />
-        	<img id="library" src="images/library.jpg" crossorigin="anonymous" />
+       	 	<img id="dusty_lake" src="images/dusty_lake.jpg" crossorigin="anonymous" />
+       		<img id="old_church" src="images/old_church.jpg" crossorigin="anonymous" />
+       	 	<img id="marriot" src="images/marriot.jpg" crossorigin="anonymous" />
+        	<img id="whisky_room" src="images/whisky_room.jpg" crossorigin="anonymous" />
 	</a-assets>
 		
+	<a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+	</a-sky>
     
-        <a-entity position="-2 2 -2" gltf-models="markers/rainbow.glb" rotation="0 45 0" scale=".2 .2 .2">
-	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #magical"  
-        </a-entity>
-    
-	<a-entity position="2 2 -2" gltf-models="markers/rat.glb" rotation="0 -45 0" scale=".2 .2 .2">
-	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #sewer"  
-        </a-entity>
- 
-	<a-entity position="0 2 2 .5" gltf-models="markers/water.glb" rotation="0 180 0" scale=".2 .2 .2">
-	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #water"  
-        </a-entity>
-    
-	<a-entity position="2 2 2.5" gltf-models="markers/books.glb" rotation="0 180 0" scale=".2 .2 .2">
-	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #library"  
-        </a-entity>
+      <a-box
+        position="-2 2 -2"
+        scale=".2 .2 .2"     
+        rotation="0 45 0"
+        value="Nine O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #old_church"      
+      ></a-box>  
+     <a-box
+        position="2 2 -2"
+        scale=".2 .2 .2" 
+        rotation="0 -45 0"
+        value="Three O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #dusty_lake"      
+      ></a-box>  
+     <a-box
+        position="0 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #whisky_room"     
+      ></a-box> 
+     <a-box
+        position="2 2 2.5"
+        scale=".2 .2 .2" 
+        rotation="0 180 0"
+        value="Six O'Clock"
+        align="center"
+        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #marriot"     
+      ></a-box> 
     <a-camera>
         <a-cursor color=#ff77ff></a-cursor>
     </a-camera>
@@ -35,3 +56,15 @@
 </a-scene>
     
 </body>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
