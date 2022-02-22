@@ -17,14 +17,10 @@
 		material = "src: #sky">
 	</a-sky>
     
-      <a-box
-        position="-2 2 -2"
-        scale=".2 .2 .2"     
-        rotation="0 45 0"
-        value="Nine O'Clock"
-        align="center"
-        event-set__enter="_event: mouseenter; _target: a-sky; material.src: #magical"      
-      ></a-box>  
+ 
+        <a-entity position="-2 2 -2" gltf-models="markers/rainbow.glb" rotation="0 45 0" scale=".2 .2 .2">
+	      event-set__enter="_event: mouseenter; _target: a-sky; material.src: #magical"  
+        </a-entity>
      <a-box
         position="2 2 -2"
         scale=".2 .2 .2" 
